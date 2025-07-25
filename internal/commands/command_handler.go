@@ -32,7 +32,7 @@ func (h *Handler) ParseFlags() {
 			return
 		}
 
-		fmt.Printf("Track successfully created (ID:%d)\n", id)
+		fmt.Printf("✅ Task successfully created (ID:%d)\n", id)
 	}
 	if list != "" && update == 0 {
 		switch list {
@@ -63,6 +63,6 @@ func (h *Handler) ParseFlags() {
 		if err != nil {
 			fmt.Printf("something wrong: %s\n", err.Error())
 		}
-		fmt.Printf("Your new track: %v", track)
+		fmt.Printf("✅ Task updated: %v", track)
 	}
 }
